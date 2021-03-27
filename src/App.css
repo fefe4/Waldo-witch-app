@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+/* The Modal (background) */
+.modal {
+  display: block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Modal Content/Box */
+.modal-content {
+  
+  background-color: #fefefe;
+  margin: 9.5% auto; /* 15% from the top and centered */
+  padding:1vw;
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+  height:auto;
+  border-color: silver;
+  border-width: 2px;
+  border-style:solid;
+  background-color:gray;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.witch{
+  width: 40vw;
+  height:auto;  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.introduction {
+  position:absolute;
+  top: 22%;
+  left:50vw;
+  width:26vw;
+  display:flex;
+  flex-direction: column; 
+  justify-content: space-between;
+  height:58%;
 }
 
-.App-link {
-  color: #61dafb;
+.linksContainer {
+  display:flex;
+  position: absolute;
+  height:25%;
+  width:50%;
+  bottom: 0%;
+  align-content: center;
+  justify-content: space-between;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.links {
+  background-color: rgb(105, 104, 104);
+  border-color:rgb(102, 101, 101);
+  border-style: solid;
+  border-width: 1px ;
+  border-radius: 5%;
+ 
+  padding-top:1vh;
+  padding-bottom: 1vh;
 }
+
+/* .highscore {
+  position:static;
+  display:flex;
+  justify-content: flex-end;
+} */
+
+align-self: center;
+  
+  
+  background-color: gray;
+  
+  width:60%;
+  
