@@ -21,7 +21,7 @@ function Home() {
             <Link to="/Highscore">
               <button className="links">See Highscore</button>
             </Link>
-            <Link  to="/level1" onClick={gameStart}>
+            <Link  to="/level1" >
               <button className="links">Start New Game</button>
             </Link>
           </div>
@@ -29,7 +29,7 @@ function Home() {
         <img className="witch" src={witch} alt="witch" />
         <div className="introduction">
           <label>
-            Help Ava the witch to find the demons before they invade the forest
+            Help the Witch to find the demons before they invade the forest
           </label>
           
         </div>

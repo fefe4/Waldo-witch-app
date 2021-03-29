@@ -11,6 +11,7 @@ function dropdownListener() {
         dropdown.style.display = "flex";
         dropdown.style.top = `${position.top}%`
         dropdown.style.left = `${position.left}%`  
+        dropdown.id = `0${i}`
     });
   }
 }
