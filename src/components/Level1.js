@@ -6,6 +6,8 @@ import Boxes from "./Boxes"
 import Dropdown from "./Dropdown"
 import dropdownListener from "./dropdownListener"
 
+
+
 const Level1 = (props) => {
  
   useEffect(() => {
@@ -14,10 +16,14 @@ const Level1 = (props) => {
 
   return (
     <div>
+      
     <div className="boxContainer">
       <img className="level1" src={level1} alt="level1"></img>
+      <label id="timer" className="timer"></label>
       <Instructions1/>
+      
       <Boxes/>
+      
     </div>
       <Dropdown/>
     </div>
@@ -25,3 +31,4 @@ const Level1 = (props) => {
 };
 
 export default Level1;
+

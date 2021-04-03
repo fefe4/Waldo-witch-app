@@ -5,16 +5,11 @@ import witch from "./imgs/witch.png";
 
 
 function Home() {
-  const [start, setStart] = useState(false);
-  function gameStart(e) {
-    
-    setStart(true);
-    console.log(start)
-  }
+ 
   return(
   <div> 
-    {start? <div></div>
-   : <div id="myModal" className="modal">
+  
+    <div id="myModal" className="modal">
       <div className="modal-content">
         <span className="close">&times;</span>
         <div className="linksContainer">             
@@ -32,9 +27,9 @@ function Home() {
             Help the Witch to find the demons before they invade the forest
           </label>
           
-        </div>
-      </div>
-    </div>}
+     </div>
+     </div>
+    </div>
   </div>
   )
 }

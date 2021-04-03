@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import cat from "./imgs/cat.png";
-import demon from "./imgs/demon.png"
 import ghost from "./imgs/ghost.png"
+import demon from "./imgs/demon.png"
 import zombies from "./imgs/zombies.png"
-
+import counter from "./timer"
 
 function Home() {
   const [start, setStart] = useState(false);
+  
 
   function gameStart(e) {
     setStart(true);
@@ -21,17 +22,17 @@ function Home() {
         <img className="cat" src={cat} alt="cat" />
         <div className="instructions">
           <label>
-            "Ava, send the creatures back to their realm , be careful, the enemy has set up ilussions to deceive us"
+           
           </label>
             <div>
               <div className="iconX">
-                <img className="icons" src={demon} alt="demon" />
+                <img className="icons" src={ghost} alt="ghost" />
                 <div className="inbetween">
                   <label className="X">X 1</label>
                 </div>
               </div>
               <div className="iconX">
-                <img className="icons" src={ghost} alt="ghost" />
+                <img className="icons" src={demon} alt="demon" />
                 <div className="inbetween">
                   <label className="X">X 1</label>
                 </div>
@@ -45,7 +46,7 @@ function Home() {
          
             </div>
 
-          <button className="buttons" to="/level1" onClick={gameStart}>Begin</button>
+          <button className="buttons" to="/level1" onClick={() => {gameStart(); counter()}}>Begin</button>
           <button className="buttons" to="/Highscore">See Highscore</button>
         </div>
       </div>
@@ -55,3 +56,4 @@ function Home() {
 }
 
 export default Home;
+

@@ -6,12 +6,12 @@ function dropdownListener() {
   for (let i = 0; i < 180; i++) {
     boxes[i].addEventListener("click", () => {
       console.log("23")
-      const dropdown = document.getElementById("dropdown");
-        const position = boxPosition(i);
-        dropdown.style.display = "flex";
-        dropdown.style.top = `${position.top}%`
-        dropdown.style.left = `${position.left}%`  
-        dropdown.id = `0${i}`
+      const dropdown = document.getElementsByClassName("foo")[0];
+      const position = boxPosition(i);
+      dropdown.style.display ="flex";
+      dropdown.style.top = `${position.top}%`
+      dropdown.style.left = `${position.left}%`  
+      dropdown.id = `0${i}`
     });
   }
 }
